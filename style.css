@@ -13,8 +13,6 @@ p {
 }
 
 .grid-wrapper {
-
-  /*background-color: #ffffff;*/
   background-color: #ECF2F6;
   display: grid;
   grid-template-columns:  repeat(12, 1fr);
@@ -37,7 +35,6 @@ p {
 }
 
 .box1 {
-  
   background-color: #364051;
   grid-area: box1;
   margin-right: 1.5rem;
@@ -54,6 +51,7 @@ p {
 }
 
 .box3 {
+  display: flex;
   background-color: #ECF2F6;
   grid-area: box3;
   margin-top: 1rem;
@@ -117,7 +115,6 @@ p {
 }
 
 .nav-categories {
-  /*border-bottom: 2px solid black;*/
   height: 23rem;
 }
 
@@ -136,7 +133,6 @@ p {
 }
 
 .side-nav:hover {
-  /*color: #FFFFFF;*/
   color: #F7F4EA;
   background-color: #2F3848;
   cursor: pointer;
@@ -175,7 +171,6 @@ p {
 .tasks {
   background-size: 20px 20px;
   background-position: 29px 9px;
-
   background-image: url(images/nav-bar/icon-clipboard-grey.png);
 }
 
@@ -186,7 +181,6 @@ p {
 .calander {
   background-size: 20px 20px;
   background-position: 29px 9px;
-
   background-image: url(images/nav-bar/icon-event-grey.png);
 }
 
@@ -275,8 +269,6 @@ p {
   background-image: url(images/nav-bar/icon-rectangle-green.png);
 }
 
-
-
 .header-link {
   height: 4rem;
   width: 14rem;
@@ -352,9 +344,6 @@ p {
   background-size: 2.3rem 2.3rem;
 }
 
-
-
-
 .icon-dots:hover {
   background-image: url(images/icon-squared-menu-egg.png);
 }
@@ -370,9 +359,21 @@ p {
 }
 
 .customer-service {
+  background-position: 6.3rem 7.5rem;
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-image: url(images/nav-bar/icon-marker-grey.png);
   color: #64646B;
   height: 19rem;
   padding-left: 6.2rem;
+}
+
+.customer-service p {
+  padding-left: 2.7rem;
+}
+
+.customer-service a {
+  color: #26A3F6;
 }
 
 .button-container {
@@ -381,7 +382,6 @@ p {
   align-items: center;
   justify-content: flex-end;
   padding-right: 5.3rem;
-  /*width: 35%;*/
 }
 
 .button-style {
@@ -425,8 +425,8 @@ p {
 }
 
 .summary-container {
- background-color: #FFFFFF;
- display: flex;
+  background-color: #FFFFFF;
+  display: flex;
 }
 
 .summary-container a {
@@ -544,7 +544,40 @@ p {
   background-image: url(images/bar-graph.png);
   background-position: 7.9rem 2.8rem;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 56%;
+}
+
+.line-under-spinners {
+  border: 1px solid #D2DAE2;
+  margin: 13.4rem 0 0 2.3rem;
+  /*padding-left: 10px;*/
+  width: 85%;
+}
+
+.graph-collapse-button {
+  outline: none;
+  border: 2px solid #D2DAE2;
+  border-radius: 28px;
+  height: 40px;
+  margin: -2.3rem 0 0 54.3rem;
+  width: 40px;
+  background-position: .5rem .4rem;
+  background-repeat: no-repeat;
+  background-image: url(images/icon-chevron-grey.png);
+}
+
+.graph-collapse-button:hover {
+  border: 2px solid #26A3F6;
+  cursor: pointer;
+}
+
+.line-under-bargraph {
+  /*display: block;*/
+  margin-top: 127px;
+  border: 1px solid #D2DAE2;
+  width: 87%;
+  margin-left: 13px;
+  /*padding-left:10px;*/
 }
 
 .job {
@@ -613,7 +646,6 @@ p {
   width: 30rem;
 }
 
-
 .social-links:link,
 .social-links:visited {
   color: #FFFFFF;
@@ -646,40 +678,43 @@ p {
 }
 
 .widgets {
+  background-size: 19px 19px;
+  background-position: 0px 22px;
+  background-repeat: no-repeat;
   padding-top: .7rem;
   color: #596374;
   font-size: 1.2rem;
   width: 30rem; 
   height: 18rem;
-  border-bottom: 1px solid #596374;
-
+  border-bottom: 1px solid #3B999E;
 }
 
+.widgets h2 {
+  padding-left: 25px;
+}
 
 .link-to-job { 
-  
-
+  background-image: url(images/icon-earth.png);
 }
 
 .link-to-job-input {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 .5rem .5rem 0;
   color: #596374;
   align-items: center;
   font-size: 1.4rem;
   padding-left: 1px;
   margin-top: 21px;
   display: flex;
-  /*width: 70%;*/
-  height: 48px;
+  height: 4.8rem;
   background-color: #FFFFFF;
 }
 
 .link-to-job-button {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 .5rem .5rem 0;
   background-color: #4DBAC0;
   color: #F7F4EA;
-  height: 48px;
-  width: 60px;
+  height: 4.8rem;
+  width: 6rem;
   justify-content: flex-end;
 }
 
@@ -692,20 +727,23 @@ p {
   color: #596374;
   align-items: center;
   font-size: 1.4rem;
-  padding-left: 14px;
-  margin-top: 21px;
+  padding-left: 1.4rem;
+  margin-top: 2.1rem;
   display: flex;
-  /*width: 70%;*/
-  height: 48px;
+  height: 4.8rem;
   background-color: #FFFFFF;
+}
+
+.button-widget {
+  background-image: url(images/icon-web.png);
 }
 
 .link-to-widgets-button {
   border-radius: 0 5px 5px 0;
   background-color: #4DBAC0;
   color: #F7F4EA;
-  height: 48px;
-  width: 60px;
+  height: 4.8rem;
+  width: 6rem;
   justify-content: flex-end;
 }
 
@@ -713,16 +751,20 @@ p {
   background-color: #3B999E;
 }
 
+.upload-resume {
+  background-image: url(images/icon-paper-plane.png);
+}
+
+
 .upload-resume-input {
   border-radius: 0 5px 5px 0;
   color: #596374;
   align-items: center;
   font-size: 1.4rem;
-  padding-left: 14px;
-  margin-top: 21px;
+  padding-left: 1.4rem;
+  margin-top: 2.1rem;
   display: flex;
-  /*width: 70%;*/
-  height: 48px;
+  height: 4.8rem;
   background-color: #FFFFFF;
 }
 
@@ -738,11 +780,32 @@ p {
 
 
 @media screen and (max-width: 1300px) {
+  .grid-wrapper {
+    grid-template-areas: 
+    "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box1 box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+    "box1 box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
+    "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
+    }
 
+    .box1 {
+      width: 216px;
+    }
 
-
-
-
+  .box6 {
+    display: flex;
+    justify-content: space-around;
+  }
 
 
 
