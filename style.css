@@ -8,7 +8,6 @@ body {
 }
   
 p {
-  color: #A0ABBE;
   margin: 0;
   padding-left: .5rem;
 }
@@ -38,10 +37,14 @@ p {
 }
 
 .box1 {
-  color: #A0ABBE;
+  
   background-color: #364051;
   grid-area: box1;
   margin-right: 1.5rem;
+}
+.box1 p {
+  align-items: center;
+  padding-left: 62px;
 }
 
 .box2 {
@@ -74,26 +77,205 @@ p {
   grid-area: box6;
 }
 
+.profile-picture {
+  background-size: 145px 145px;
+  background-position: -29px -1px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-image: url(images/nav-bar/perry-Mervar.jpg);
+}
+
 .nav-profile {
-  color: #A0ABBE
-  border-bottom: 2px solid black;
-  height: 16rem;
+  border-bottom: 1px solid black;
+  color: #A0ABBE;
+  height: 14rem;
+  padding:38px 0 0 64px;
+}
+
+.nav-profile p {
+  font-size: 1.5rem;
+  padding: 5px;
 }
 
 .nav-main {
   border-bottom: 1px solid black;
-  height: 30rem;
+  height: 31rem;
+}
+
+.nav-bar--header {
+  align-items: center;
+  color: #A0ABBE;
+  display: flex;
+  font-size: 1.2rem;
+  height: 4rem;
 }
 
 .nav-admin {
   border-bottom: 1px solid black;
-  height: 30rem;
+  height: 33rem;
 }
 
 .nav-categories {
   /*border-bottom: 2px solid black;*/
   height: 23rem;
 }
+
+.side-nav {
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  
+  color: #A0ABBE;
+  font-size: 1.6rem;
+  height: 4rem;
+  width: 100%;
+}
+.side-nav p{
+  margin-top: .5rem 0 0 0;
+}
+
+.side-nav:hover {
+  /*color: #FFFFFF;*/
+  color: #F7F4EA;
+  background-color: #2F3848;
+  cursor: pointer;
+}
+
+.home {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-house-grey.png);
+}
+
+.home:hover {
+  background-image: url(images/nav-bar/icon-house-eggshell.png);
+}
+
+.jobs {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-business-grey.png);
+}
+
+.jobs:hover {
+  background-image: url(images/nav-bar/icon-business-eggshell.png);
+}
+
+.resumes {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-index-grey.png);
+}
+
+.resumes:hover {
+  background-image: url(images/nav-bar/icon-index-eggshell.png);
+}
+
+.tasks {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+
+  background-image: url(images/nav-bar/icon-clipboard-grey.png);
+}
+
+.tasks:hover {
+  background-image: url(images/nav-bar/icon-clipboard-eggshell.png);
+}
+
+.calander {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+
+  background-image: url(images/nav-bar/icon-event-grey.png);
+}
+
+.calander:hover {
+  background-image: url(images/nav-bar/icon-event-egg.png);
+}
+
+.user {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-group-grey.png);
+}
+
+.user:hover {
+  background-image: url(images/nav-bar/icon-group-egg.png);
+}
+
+.locations {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-marker-grey.png);
+}
+
+.locations:hover {
+  background-image: url(images/nav-bar/icon-marker-egg.png);
+}
+
+.workflows {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-flow-chart-grey.png);
+}
+
+.workflows:hover {
+  background-image: url(images/nav-bar/icon-flow-chart-egg.png);
+}
+
+.job-boards {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-read-grey.png);
+}
+
+.job-boards:hover {
+  background-image: url(images/nav-bar/icon-read-egg.png);
+}
+
+.social {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-user-groups-grey.png);
+}
+
+.social:hover {
+  background-image: url(images/nav-bar/icon-user-groups-egg.png);
+}
+
+.yellow-box {
+  height: 20px;
+  width: 20px;
+  color: yellow;
+  background-color: yellow;
+}
+
+.administrative {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-rectangle-yellow.png);
+}
+
+.design {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-rectangle-blue.png);
+}
+
+.executive {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-rectangle-red.png);
+}
+
+.human-resources {
+  background-size: 20px 20px;
+  background-position: 29px 9px;
+  background-image: url(images/nav-bar/icon-rectangle-green.png);
+}
+
+
 
 .header-link {
   height: 4rem;
@@ -170,6 +352,9 @@ p {
   background-size: 2.3rem 2.3rem;
 }
 
+
+
+
 .icon-dots:hover {
   background-image: url(images/icon-squared-menu-egg.png);
 }
@@ -192,11 +377,11 @@ p {
 
 .button-container {
   display: flex;
-  height: 12rem;
+  height: 16rem;
   align-items: center;
   justify-content: flex-end;
   padding-right: 5.3rem;
-  width: 35%;
+  /*width: 35%;*/
 }
 
 .button-style {
@@ -339,23 +524,6 @@ p {
 
 }
 
-.side-nav {
-  display: flex;
-  align-items: center;
-  /*border-bottom: 2px solid black;*/
-  color: #f7f4e9;
-  font-size: 1.6rem;
-  height: 4rem;
-  width: 100%;
-}
-.side-nav p{
-  margin-top: .5rem 0 0 0;
-}
-
-.side-nav:hover {
-  background-color: #2F3848;
-  cursor: pointer;
-}
 
 .spinner-section {
 
