@@ -661,6 +661,71 @@ p {
 
 }
 
+.link-to-job-input {
+  border-radius: 0 5px 5px 0;
+  color: #596374;
+  align-items: center;
+  font-size: 1.4rem;
+  padding-left: 1px;
+  margin-top: 21px;
+  display: flex;
+  /*width: 70%;*/
+  height: 48px;
+  background-color: #FFFFFF;
+}
+
+.link-to-job-button {
+  border-radius: 0 5px 5px 0;
+  background-color: #4DBAC0;
+  color: #F7F4EA;
+  height: 48px;
+  width: 60px;
+  justify-content: flex-end;
+}
+
+.link-to-job-button:hover {
+  background-color: #3B999E;
+}
+
+.link-to-widgets {
+  border-radius: 0 5px 5px 0;
+  color: #596374;
+  align-items: center;
+  font-size: 1.4rem;
+  padding-left: 14px;
+  margin-top: 21px;
+  display: flex;
+  /*width: 70%;*/
+  height: 48px;
+  background-color: #FFFFFF;
+}
+
+.link-to-widgets-button {
+  border-radius: 0 5px 5px 0;
+  background-color: #4DBAC0;
+  color: #F7F4EA;
+  height: 48px;
+  width: 60px;
+  justify-content: flex-end;
+}
+
+.link-to-widgets-button:hover {
+  background-color: #3B999E;
+}
+
+.upload-resume-input {
+  border-radius: 0 5px 5px 0;
+  color: #596374;
+  align-items: center;
+  font-size: 1.4rem;
+  padding-left: 14px;
+  margin-top: 21px;
+  display: flex;
+  /*width: 70%;*/
+  height: 48px;
+  background-color: #FFFFFF;
+}
+
 .button-widget {
  
   
