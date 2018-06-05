@@ -14,6 +14,7 @@ p {
 }
 
 .grid-wrapper {
+
   background-color: #ECF2F6;
   display: grid;
   grid-template-columns:  repeat(12, 1fr);
@@ -75,6 +76,7 @@ p {
   background-color: #EDF2F6;
   grid-area: box6;
 }
+           /*Side Nav-bar*/
 
 .profile-picture {
   margin:0 auto;
@@ -122,15 +124,17 @@ p {
 }
 
 .side-nav {
+  background-position: 29px 9px;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  
   color: #A0ABBE;
   font-size: 1.6rem;
   height: 4rem;
   width: 100%;
 }
+
 .side-nav p{
   margin-top: .5rem 0 0 0;
 }
@@ -140,10 +144,9 @@ p {
   background-color: #2F3848;
   cursor: pointer;
 }
+        /*Side nav-bar icons*/
 
 .home {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-house-grey.png);
 }
 
@@ -152,8 +155,6 @@ p {
 }
 
 .jobs {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-business-grey.png);
 }
 
@@ -162,8 +163,6 @@ p {
 }
 
 .resumes {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-index-grey.png);
 }
 
@@ -172,8 +171,6 @@ p {
 }
 
 .tasks {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-clipboard-grey.png);
 }
 
@@ -182,8 +179,6 @@ p {
 }
 
 .calander {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-event-grey.png);
 }
 
@@ -192,8 +187,6 @@ p {
 }
 
 .user {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-group-grey.png);
 }
 
@@ -202,8 +195,6 @@ p {
 }
 
 .locations {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-marker-grey.png);
 }
 
@@ -212,8 +203,6 @@ p {
 }
 
 .workflows {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-flow-chart-grey.png);
 }
 
@@ -222,8 +211,6 @@ p {
 }
 
 .job-boards {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-read-grey.png);
 }
 
@@ -232,8 +219,6 @@ p {
 }
 
 .social {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-user-groups-grey.png);
 }
 
@@ -241,34 +226,19 @@ p {
   background-image: url(images/nav-bar/icon-user-groups-egg.png);
 }
 
-.yellow-box {
-  height: 20px;
-  width: 20px;
-  color: yellow;
-  background-color: yellow;
-}
-
 .administrative {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-rectangle-yellow.png);
 }
 
 .design {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-rectangle-blue.png);
 }
 
 .executive {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-rectangle-red.png);
 }
 
 .human-resources {
-  background-size: 20px 20px;
-  background-position: 29px 9px;
   background-image: url(images/nav-bar/icon-rectangle-green.png);
 }
 
@@ -299,10 +269,17 @@ p {
   height: 16rem;
 }
 
+            /*search bar and icons*/
+
 .hamburger {
+  background-size: 5.5rem 5.5rem;
   background-color: #FFFFFF;
-  background-image: url(images/icon-menu.png);
-  background-position: 1.5rem 1.5rem;
+  background-image: url(images/icon-menu-grey-left.png);
+  background-position: 2rem 1.1rem;
+}
+
+.hamburger:hover {
+  background-image: url(images/icon-menu-left-egg.png);
 }
 
 .search-input {
@@ -312,7 +289,8 @@ p {
   border: 1px solid #E7E7E7;
   font-size: 2rem;
   padding-left: 7rem;
-  width: 92.2rem;
+  /*width: 92.2rem;*/
+  width: calc(100% - 400px);
 }
 .icon {
   background-repeat: no-repeat;
@@ -379,6 +357,8 @@ p {
   color: #26A3F6;
 }
 
+    /*Top Buttons*/
+
 .button-container {
   display: flex;
   height: 16rem;
@@ -426,6 +406,7 @@ p {
   background-position: 1rem 1.1rem;
   background-image: url(images/icon-trash.png);
 }
+      /*Summary area*/
 
 .summary-container {
   background-color: #FFFFFF;
@@ -527,14 +508,14 @@ p {
 
 }
 
+        /*Graphs*/
 
 .spinner-section {
-margin: 0 auto;
+  margin: 0 auto;
 
 }
 
 .spinners {
-
   display: flex;
   height: 20rem;
   width: 60rem;
@@ -546,10 +527,12 @@ margin: 0 auto;
 
 
 .bar-graph {
-  background-image: url(images/bar-graph.png);
-  background-position: 7.9rem 2.8rem;
-  background-repeat: no-repeat;
   height: 56%;
+}
+
+.bar-graph img {
+  width: 470px;
+  padding: 2.9rem 0 0 8rem;
 }
 
 .line-under-spinners {
@@ -577,12 +560,10 @@ margin: 0 auto;
 }
 
 .line-under-bargraph {
-  /*display: block;*/
   margin-top: 127px;
   border: 1px solid #D2DAE2;
   width: 87%;
   margin-left: 13px;
-  /*padding-left:10px;*/
 }
 
 .job {
@@ -711,7 +692,7 @@ margin: 0 auto;
   color: #596374;
   align-items: center;
   font-size: 1.4rem;
-  padding-left: 1px;
+  padding-left: 19px;
   margin-top: 21px;
   display: flex;
   height: 4.8rem;
@@ -736,7 +717,7 @@ margin: 0 auto;
   color: #596374;
   align-items: center;
   font-size: 1.4rem;
-  padding-left: 1.4rem;
+  padding-left: 3rem;
   margin-top: 2.1rem;
   display: flex;
   height: 4.8rem;
@@ -791,61 +772,75 @@ margin: 0 auto;
 @media screen and (max-width: 1300px) {
   .grid-wrapper {
     grid-template-areas: 
-    "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
-    "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
-    "box1 box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
-    "box1 box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
-    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
-    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
-    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
-    "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
-    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
-    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
-    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
-    "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
-    "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
-    "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
+      "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+      "box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+      "box1 box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+      "box1 box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+      "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+      "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+      "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+      "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+      "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+      "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+      "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+      "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+      "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
+      "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
     }
 
-  .box1 {
-    /*width: 216px;*/
-  }
-
-  .box6 {
-    /*display: flex;*/
-    /*justify-content: space-around;*/
-  }
-
   .box2 {
-    margin-left: 0;
+
+    /*margin-left: 0;*/
   }
+
+  .box4 {
+    margin: 0 auto;
+  }
+
+  .customer-service {
+   height: 0;
+  }
+
+  /*.upper-lower-header {
+    display: inherit;
+
+  }*/
+
+  .button-container {
+  display: flex;
+  height: 16rem;
+  align-items: center;
+  /*justify-content: flex-end;*/
+  /*padding-right: 5.3rem;*/
+}
 
   .spinner-section {
-    margin-top: 50px;
-    padding-left: 98px;
+   
   }
   
-
-
   .circle {
     justify-content: space-between;
   }
 
   .bar-graph {
-    background-position: 28.9rem 2.8rem;
+  }
+
+  .bar-graph img {
+    width: 645px;
+    padding-right: 76px
   }
 
   .spinners {
     display: flex;
     height: 20rem;
-    width: 80rem;
+    width: 70%rem;
   }
 
-  .bar-graph {
+  /*.bar-graph {
     background-position: 21.2rem 3rem;
     background-repeat: no-repeat;
     background-size:  600px;
-  }
+  }*/
 
   .line-under-spinners {
     display: none;
@@ -856,40 +851,54 @@ margin: 0 auto;
   }
 
   .social-container {
-    /*padding: 3.6rem 5.5rem 0 5.5rem;*/
+    padding: 3.6rem 4.5rem 0 4.5rem;
     display: flex;
     justify-content: space-around;
   }
 
   .social-side {
-  background-position: 1px 1px;
-  height: 4rem;
-  margin-bottom: 1.9rem;
-  padding-top: .3rem;
-  width: 27rem;
-}
-
-.social-links:link,
-.social-links:visited {
-  padding: .8rem 2.5rem;
+    background-position: 1px 1px;
+    height: 4rem;
+    margin-bottom: 1.9rem;
+    padding-top: .3rem;
+    width: 27rem;
   }
 
-.widgets-container {
+  .social-links:link,
+  .social-links:visited {
+    padding: .8rem 2.5rem;
+  }
+
+  .widgets-container {
+    display: flex;
+    padding-right: 43px;
+    padding-left: 73px;
+    justify-content: space-between;
+  }
+
+  .widgets {
+    padding-top: .7rem;
+    color: #596374;
+    font-size: 1.2rem;
+    width: 30rem; 
+    height: 18rem;
+    border-bottom: none;
   
-  display: flex;
-  /*justify-content: space-around;*/
 }
 
-.widgets {
-  background-size: 19px 19px;
-  background-position: 0px 22px;
-  background-repeat: no-repeat;
-  padding-top: .7rem;
-  color: #596374;
-  /*font-size: 1.2rem;*/
-  width: 30rem; 
-  /*border-bottom: 1px solid #3B999E;*/
+ .link-to-job-input {
+    width: 91%;
+ }
+
+ .link-to-widgets {
+    width: 90%
   }
+
+  .upload-resume-input {
+    width: 88%
+  }
+
+  
 
 }
 
@@ -917,11 +926,62 @@ margin: 0 auto;
     display: none;
   }
 
+  .box2 {
+    padding-left: 15px;
+  }
+
+  .
+
+
   .social-container {
     padding: 3.6rem 5.5rem 0 5.5rem;
     display: inherit;
+    width: 89%;
   }
+
+  .social-side {
+    background-position: 1px 1px;
+    height: 4rem;
+    margin-bottom: 1.9rem;
+    padding-top: .3rem;
+    width: 100%;
+  }
+
+  .hamburger {
+  background-size: 5.5rem 5.5rem;
+  background-color: #FFFFFF;
+  background-image: url(images/icon-menu-grey-right.png);
+  background-position: 2rem 1.1rem;
+}
+
+.hamburger:hover {
+  background-image: url(images/icon-menu-right-egg.png);
+}
+
+}
+
+@media screen and (max-width: 817px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 }
+
+
+
