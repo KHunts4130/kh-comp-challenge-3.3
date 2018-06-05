@@ -2,7 +2,8 @@ html,
 body {
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Song Myung', serif;
   font-size: 62.5%;
   height: 1440px;
 }
@@ -76,6 +77,7 @@ p {
 }
 
 .profile-picture {
+  margin:0 auto;
   background-size: 145px 145px;
   background-position: -29px -1px;
   height: 90px;
@@ -88,10 +90,11 @@ p {
   border-bottom: 1px solid black;
   color: #A0ABBE;
   height: 14rem;
-  padding:38px 0 0 64px;
+  padding:38px 0 0 0px;
 }
 
 .nav-profile p {
+  margin:0 auto;
   font-size: 1.5rem;
   padding: 5px;
 }
@@ -526,10 +529,12 @@ p {
 
 
 .spinner-section {
+margin: 0 auto;
 
 }
 
 .spinners {
+
   display: flex;
   height: 20rem;
   width: 60rem;
@@ -632,9 +637,13 @@ p {
 }
 
 .social-container {
-
+  font-weight: 700;
+  justify-content: space-around;
 }
 
+.widgets-container {
+  justify-content: space-around;
+}
 
 .social-side {
   background-repeat: no-repeat;
@@ -798,13 +807,119 @@ p {
     "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
     }
 
-    .box1 {
-      width: 216px;
-    }
+  .box1 {
+    /*width: 216px;*/
+  }
 
   .box6 {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+  }
+
+  .box2 {
+    margin-left: 0;
+  }
+
+  .spinner-section {
+    margin-top: 50px;
+    padding-left: 98px;
+  }
+  
+
+
+  .circle {
+    justify-content: space-between;
+  }
+
+  .bar-graph {
+    background-position: 28.9rem 2.8rem;
+  }
+
+  .spinners {
+    display: flex;
+    height: 20rem;
+    width: 80rem;
+  }
+
+  .bar-graph {
+    background-position: 21.2rem 3rem;
+    background-repeat: no-repeat;
+    background-size:  600px;
+  }
+
+  .line-under-spinners {
+    display: none;
+  }
+
+  .graph-collapse-button {
+    display: none;
+  }
+
+  .social-container {
+    /*padding: 3.6rem 5.5rem 0 5.5rem;*/
     display: flex;
     justify-content: space-around;
+  }
+
+  .social-side {
+  background-position: 1px 1px;
+  height: 4rem;
+  margin-bottom: 1.9rem;
+  padding-top: .3rem;
+  width: 27rem;
+}
+
+.social-links:link,
+.social-links:visited {
+  padding: .8rem 2.5rem;
+  }
+
+.widgets-container {
+  
+  display: flex;
+  /*justify-content: space-around;*/
+}
+
+.widgets {
+  background-size: 19px 19px;
+  background-position: 0px 22px;
+  background-repeat: no-repeat;
+  padding-top: .7rem;
+  color: #596374;
+  /*font-size: 1.2rem;*/
+  width: 30rem; 
+  /*border-bottom: 1px solid #3B999E;*/
+  }
+
+}
+
+
+@media screen and (max-width: 1112px) {
+
+  .grid-wrapper {
+    grid-template-areas: 
+    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+    "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
+    "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
+    }
+  .box1 {
+    display: none;
+  }
+
+  .social-container {
+    padding: 3.6rem 5.5rem 0 5.5rem;
+    display: inherit;
   }
 
 
