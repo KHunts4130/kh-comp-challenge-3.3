@@ -641,6 +641,10 @@ h3 {
   border: none;
 }
 
+.lorem {
+  width: 10rem;
+}
+
 .social-container {
   font-weight: 700;
   justify-content: space-around;
@@ -869,6 +873,7 @@ h3 {
   }
 
   .social-side {
+    background-position: 1.2rem .6rem;
     height: 4rem;
     margin-bottom: 1.9rem;
     padding-top: .3rem;
@@ -895,10 +900,12 @@ h3 {
 
   .widgets-container {
     display: flex;
+    justify-content: space-between;
   }
 
   .widgets {
     border-bottom: none;
+    width: 28%;
   }
 
   .widgets p{
@@ -911,17 +918,19 @@ h3 {
   }
 
   .link-to-job {
-    background-position: 4.7rem 2.2rem;
+    background-position: 6.3rem 2.2rem;
     border-bottom: none;
+    padding-left: 6rem;
+    width: 33%;
   }
 
   .link-to-job-input {
     padding-left: 0;
+    /*width: 72%;*/
   }
 
   .button-widget {
-    background-position: 1.6rem 2.2rem;
-    padding-left: 1.7rem;
+    /*margin-right: 2.9rem;*/
   }
 
   .link-to-widgets {
@@ -930,7 +939,7 @@ h3 {
 
   .upload-resume {
     background-position: 0 2.2rem;
-    margin-right: 14px;
+    margin-right: 4.6rem;
   }
 
   .upload-resume h2 {
@@ -938,7 +947,7 @@ h3 {
   }
 
   .upload-resume-input {
-    margin-right: 34px;
+    margin-right: .9rem;
     padding-left: 5px;
   }
 }
@@ -995,11 +1004,10 @@ h3 {
   .social-container {
     display: inherit;
     width: 98%;
-    /*padding-left: 5.8rem;*/
   }
 
   .social-side {
-    background-position: 1px 1px;
+    background-position: 1.2rem .6rem;
     height: 4rem;
     margin-bottom: 1.9rem;
     padding-top: .3rem;
@@ -1157,24 +1165,38 @@ h3 {
     padding-top: 20px;
   }
 
+  .social-side {
+    background-position: 1.2rem .6rem;
+  }
+
+  .widgets {
+    background-position: 7px 2.2rem;
+  }
+
   .widgets p {
-    width: 60.7rem;
+    width: 83%;
   }
 
   .button-widget {
     width: 92%;
+    padding-left: 6px;
   }
 
   .link-to-widgets p {
     width: 63.7rem;
   }
 
-  .link-to-jobs p {
+  .link-to-job {
+    background-position: 0.3rem 2.2rem;
+    padding-left: 0;
+  }
+
+  .link-to-job-input p {
     width: 63.7rem;
   }
 
-  .upload-resume-input {
-
+  .upload-resume {
+    width: 93%;
   }
 }
 
@@ -1249,11 +1271,15 @@ h3 {
 
   .button-widget {
     padding-left: 0;
-    width: 96%;
+    width: 93%;
   }
 
   .widgets-container {
     padding-left: 21px;
+  }
+
+  .upload-resume-input {
+    width: 99%;
   }
 }
 
