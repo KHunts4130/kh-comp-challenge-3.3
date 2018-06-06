@@ -345,15 +345,19 @@ p {
 }
 
 .customer-service {
-  background-position: 6.3rem 7.5rem;
-  background-size: 2rem 2rem;
-  background-repeat: no-repeat;
-  background-image: url(images/nav-bar/icon-marker-grey.png);
+  /*background-position: 6.3rem 7.5rem;*/
+  /*background-size: 2rem 2rem;*/
+  /*background-repeat: no-repeat;*/
+  /*background-image: url(images/nav-bar/icon-marker-grey.png);*/
   color: #64646B;
   height: 19rem;
   padding-left: 6.2rem;
 }
 
+.customer-service img{
+  display: block;
+  margin-bottom: -2.4rem;
+}
 .customer-service p {
   padding-left: 2.7rem;
 }
@@ -443,7 +447,6 @@ p {
 
 .summary {
   width: 9.1rem;
-  margin-left: 2rem;
 }
 
 .applicants {
@@ -497,6 +500,7 @@ p {
   padding-left: 1rem;
   width: 9.2rem;
 }
+
 .description-edit:hover {
   background-color: #38404B;
   cursor: pointer;
@@ -505,7 +509,6 @@ p {
 .description-edit p {
   padding-left: 3.3rem;
   padding-top: 1rem;
-  
 }
 
         /*Graphs*/
@@ -539,10 +542,6 @@ p {
   cursor: pointer;
 }
 
-.spinner-button {
-  
-}
-
 .bar-graph-button {
   margin: 2.4rem auto;
 }
@@ -560,7 +559,6 @@ p {
   border: 1px solid #D2DAE2;
   margin: 8rem 0 0 2.3rem;
   width: calc(180% - 200px);
-  
 }
 
 .graph-button-container {
@@ -800,7 +798,6 @@ h3 {
       "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
       "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
       "box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
-      /*"box1 box1 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"*/
       "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
       "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
       "box1 box1 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
@@ -809,22 +806,29 @@ h3 {
       "box1 box1 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
     }
 
+  .box3 {
+    padding-top: 48px;
+  }
+
   .box4 {
     margin: 0 auto;
   }
-
-  .customer-service {
-   height: 0;
-  }
-
+  
   .button-container {
+    padding-right: 15px;
     display: flex;
     height: 16rem;
     align-items: center;
   }
 
   .summary-container {
+    padding-left: 20px;
     margin-top: 2rem;
+    justify-content: space-around;
+  }
+
+  .header-link {
+    /*margin-right: 0;*/
   }
 
   .circle {
@@ -870,15 +874,14 @@ h3 {
   .social-container {
     padding: 3.6rem 4.5rem 0 4.5rem;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
   }
 
   .social-side {
-    background-position: .1rem .1rem;
     height: 4rem;
     margin-bottom: 1.9rem;
     padding-top: .3rem;
-    width: 27rem;
+    width: calc(40% - 95px);
   }
 
   .social-links:link,
@@ -886,45 +889,74 @@ h3 {
     padding: .8rem 2.5rem;
   }
 
-  .widgets-container {
-    display: flex;
-    padding:0 4.4rem 0 7.3rem;
-    justify-content: space-between;
+  .faceBook {
+    background-position: .2rem .2rem;
   }
 
-  /*.widgets {
-    padding-top: .7rem;
-    color: #596374;
-    font-size: 1.2rem;
-    width: 30rem; 
-    height: 18rem;
+  .twitter {
+    background-position: 1.2rem .6rem;
+  }
+
+  .linkedin {
+    background-position: 1.6rem 1rem;
+  }
+
+
+  .widgets-container {
+    display: flex;
+  }
+
+  .widgets {
     border-bottom: none;
-  }*/
+  }
+
+  .widgets p{
+    padding-left: .5rem;
+    width: 25.7rem;
+  }
+
+  .widgets h2 {
+    font-weight: bold;
+  }
 
   .link-to-job {
-    padding-top: .7rem;
-    color: #596374;
-    font-size: 1.2rem;
-    width: 30rem; 
-    height: 18rem;
+    background-position: 4.5rem 2.2rem;
     border-bottom: none;
+    padding-left: 4.3rem;
   }
 
   .link-to-job-input {
-    width: 91%;
+    width: 82%;
+    padding-left: 0;
+  }
+
+  .button-widget {
+    background-position: 1.6rem 2.2rem;
+    padding-left: 1.9rem;
   }
 
   .link-to-widgets {
-    width: 90%
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .upload-resume {
+    background-position: .8rem 2.2rem;
+  }
+
+  .upload-resume h2 {
+    padding-left: 3.3rem;
   }
 
   .upload-resume-input {
-    width: 88%
+    width: 90%;
+    padding-left: 5px;
+    margin-left: 10px;
   }
 }
 
 
-@media screen and (max-width: 1112px) {
+@media screen and (max-width: 1098px) {
 
   .grid-wrapper {
     grid-template-areas: 
@@ -952,6 +984,28 @@ h3 {
     padding-left: 1.5rem;
   }
 
+  .search-input {
+    background-position: .5rem .5rem;
+    padding-left: 5.5rem;
+  }
+
+  .icon-profile {
+    background-position: 3.4rem 1rem;
+  }
+
+  .icon-calender {
+    background-position: 3.6rem 1.7rem;
+  }
+
+  .icon-dots {
+    background-position: 3.3rem 1.6rem;
+  }
+
+
+  .upper-header {
+    height: 6rem;
+  }
+
   .social-container {
     display: inherit;
     width: 98%;
@@ -969,45 +1023,118 @@ h3 {
   .hamburger {
     background-color: #FFFFFF;
     background-image: url(images/icon-menu-grey-right.png);
-    background-position: 2rem 1.1rem;
+    background-position: 2.5rem .1rem;
     background-size: 5.5rem 5.5rem;
   }
 
   .hamburger:hover {
-   background-image: url(images/icon-menu-right-egg.png);
+    background-image: url(images/icon-menu-right-egg.png);
   }
 
   .spinner-section {
     height: 250px;
   }
 
+  .summary-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
+
 }
 
-@media screen and (max-width: 817px) {
+@media screen and (max-width: 778px) {
+  .icon {
+    width: 8rem;
+  }
+
+  .search-input {
+    background-position: 1.5rem .1rem;
+    background-repeat: no-repeat;
+    font-size: 1.7rem;
+    height: 98%;
+    padding-left: 7rem;
+    width: calc(100% - 320px);
+  }
+
+  .hamburger {
+    background-position: 1.5rem -.2rem;
+    background-size: 5rem 5rem;
+  }
+
+  .icon-profile {
+    background-size: 2.5rem 2.5rem;
+    background-position: 2.5rem 1.1rem;
+  }
+
+  .icon-calender {
+    background-size: 2.2rem 2.2rem;
+    background-position: 2.5rem 1.2rem;
+  }
+
+  .icon-dots {
+    background-size: 2.3rem 2.3rem;
+    background-position: 2.5rem 1.3rem;
+  }
+
+  .upper-lower-header {
+    display: inherit; 
+  }
+
+  .customer-service {
+    padding-left: 2.2rem;
+    height: .1rem;
+  }
+
+  .button-container {
+    padding-left: 2rem;
+    margin-top: 3.9rem;
+    justify-content: normal;
+  }
+
+  .summary-container {
+    margin-top: 0;
+    padding-left: 20px;
+  }
 
   .widgets-container {
     display: inherit;
   }
 
+  .link-to-job-input  {
+    width: 100%
+  }
 
+  .link-to-job {
+    width: 90%
+  }
 
+  .upper-header {
+    height: 5rem;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  .spinners {
+    display: inline-flex;
+    height: 20rem;
+    margin-top: 45px;
+    padding-top: 20px;
 
 
 
 }
 
+
+@media screen and (max-width: 550px) {
+
+  .summary-container {
+    display: inherit;
+  }
+
+  .upper-lower-header {
+    /*display: inherit;*/
+    height: 162px;
+
+
+}
 
 
