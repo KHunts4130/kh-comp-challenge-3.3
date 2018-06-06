@@ -54,11 +54,8 @@ p {
 }
 
 .box3 {
-  /*display: flex;
-  background-color: #ECF2F6;*/
+  margin: 0 auto;
   grid-area: box3;
- /* margin-top: 1rem;
-  padding: 3.6rem 0 0 2.4rem;*/
 }
 
 .box4 {
@@ -345,10 +342,6 @@ p {
 }
 
 .customer-service {
-  /*background-position: 6.3rem 7.5rem;*/
-  /*background-size: 2rem 2rem;*/
-  /*background-repeat: no-repeat;*/
-  /*background-image: url(images/nav-bar/icon-marker-grey.png);*/
   color: #64646B;
   height: 19rem;
   padding-left: 6.2rem;
@@ -841,11 +834,11 @@ h3 {
 
   .bar-graph img {
     width: 64.5rem;
-    padding-right: 7.6rem;
+    padding: 2.9rem 0 0 0rem;
   }
 
   .bar-graph-button {
-    margin-left: 23rem;
+    /*margin-left: 23rem;*/
     margin-top: 8rem;
   }
 
@@ -957,7 +950,6 @@ h3 {
 
 
 @media screen and (max-width: 1098px) {
-
   .grid-wrapper {
     grid-template-areas: 
     "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
@@ -1079,6 +1071,7 @@ h3 {
 
   .upper-lower-header {
     display: inherit; 
+    height: 15.3rem;
   }
 
   .customer-service {
@@ -1088,13 +1081,57 @@ h3 {
 
   .button-container {
     padding-left: 2rem;
-    margin-top: 3.9rem;
+    margin-top: 4.9rem;
     justify-content: normal;
   }
 
   .summary-container {
     margin-top: 0;
     padding-left: 20px;
+  }
+
+  .button-style {
+    height: 4rem;
+    margin-right: 1.3rem;
+    width: 4rem;
+  }
+
+  .open-button {
+    background-position: .9rem 1rem;
+    background-size: 1.5rem 1.5rem;
+    width: 90px;
+    font-size: 1.5rem;
+  }
+
+  .ribbon-button {
+    background-size: 2rem 2rem;
+    background-position: .8rem .9rem;  
+    background-image: url(images/icon-bookmark.png);
+  }
+
+  .edit-button {
+    background-position: .9rem .8rem;  
+    background-size: 2rem 2rem;
+    background-image: url(images/icon-pencil.png);
+  }
+
+  .delete-button {
+    background-size: 1.9rem 1.9rem;
+    background-position: .9rem .8rem;
+    background-image: url(images/icon-trash.png);
+  }
+
+  .bar-graph img {
+    width: 500px;
+  }
+
+  .job {
+    height: 8.4rem;
+    display: inherit;
+  }
+
+  .job p{
+    padding-left: 0;
   }
 
   .widgets-container {
@@ -1125,6 +1162,24 @@ h3 {
 
 
 @media screen and (max-width: 550px) {
+  .grid-wrapper {
+    grid-template-areas: 
+    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+    "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+    "box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+    "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
+    "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
+    }
 
   .summary-container {
     display: inherit;
@@ -1133,7 +1188,11 @@ h3 {
   .upper-lower-header {
     /*display: inherit;*/
     height: 162px;
+  }
 
+  .bar-graph img {
+    width: 445px;
+  }
 
 }
 
