@@ -54,6 +54,8 @@ p {
 }
 
 .box3 {
+  flex-direction: column;
+  display: flex;
   margin: 0 auto;
   grid-area: box3;
 }
@@ -512,6 +514,7 @@ p {
 }
 
 .spinners {
+  margin-top: 5rem;
   display: inline-flex;
   height: 20rem;
   width: 60rem;
@@ -601,7 +604,7 @@ h3 {
 }
 
 .job-info {
-
+  overflow: hidden;
   min-height: 16rem;
   padding: 1rem 0;
 }
@@ -805,6 +808,7 @@ h3 {
 
   .box4 {
     margin: 0 auto;
+
   }
   
   .button-container {
@@ -818,10 +822,6 @@ h3 {
     padding-left: 20px;
     margin-top: 2rem;
     justify-content: space-around;
-  }
-
-  .header-link {
-    /*margin-right: 0;*/
   }
 
   .circle {
@@ -838,7 +838,6 @@ h3 {
   }
 
   .bar-graph-button {
-    /*margin-left: 23rem;*/
     margin-top: 8rem;
   }
 
@@ -867,19 +866,19 @@ h3 {
   .social-container {
     padding: 3.6rem 4.5rem 0 4.5rem;
     display: flex;
-    /*justify-content: space-around;*/
   }
 
   .social-side {
     height: 4rem;
     margin-bottom: 1.9rem;
     padding-top: .3rem;
-    width: calc(40% - 95px);
+    width: 30%;
   }
 
   .social-links:link,
   .social-links:visited {
     padding: .8rem 2.5rem;
+    font-size: 1.5rem
   }
 
   .faceBook {
@@ -893,7 +892,6 @@ h3 {
   .linkedin {
     background-position: 1.6rem 1rem;
   }
-
 
   .widgets-container {
     display: flex;
@@ -913,28 +911,26 @@ h3 {
   }
 
   .link-to-job {
-    background-position: 4.5rem 2.2rem;
+    background-position: 4.7rem 2.2rem;
     border-bottom: none;
-    padding-left: 4.3rem;
   }
 
   .link-to-job-input {
-    width: 82%;
     padding-left: 0;
   }
 
   .button-widget {
     background-position: 1.6rem 2.2rem;
-    padding-left: 1.9rem;
+    padding-left: 1.7rem;
   }
 
   .link-to-widgets {
-    width: 90%;
     padding-left: 0;
   }
 
   .upload-resume {
-    background-position: .8rem 2.2rem;
+    background-position: 0 2.2rem;
+    margin-right: 14px;
   }
 
   .upload-resume h2 {
@@ -942,9 +938,8 @@ h3 {
   }
 
   .upload-resume-input {
-    width: 90%;
+    margin-right: 34px;
     padding-left: 5px;
-    margin-left: 10px;
   }
 }
 
@@ -993,7 +988,6 @@ h3 {
     background-position: 3.3rem 1.6rem;
   }
 
-
   .upper-header {
     height: 6rem;
   }
@@ -1001,7 +995,7 @@ h3 {
   .social-container {
     display: inherit;
     width: 98%;
-    padding-left: 6.8rem;
+    /*padding-left: 5.8rem;*/
   }
 
   .social-side {
@@ -1080,7 +1074,8 @@ h3 {
   }
 
   .button-container {
-    padding-left: 2rem;
+    padding: 0 0 3.4rem 2rem;
+    padding: 0 0 0 2rem;
     margin-top: 4.9rem;
     justify-content: normal;
   }
@@ -1121,6 +1116,10 @@ h3 {
     background-image: url(images/icon-trash.png);
   }
 
+  .spinners {
+    padding-right: 10px;
+  }
+
   .bar-graph img {
     width: 500px;
   }
@@ -1136,6 +1135,7 @@ h3 {
 
   .widgets-container {
     display: inherit;
+    padding-left: 40px;
   }
 
   .link-to-job-input  {
@@ -1143,7 +1143,7 @@ h3 {
   }
 
   .link-to-job {
-    width: 90%
+    width: 92%;
   }
 
   .upper-header {
@@ -1155,9 +1155,27 @@ h3 {
     height: 20rem;
     margin-top: 45px;
     padding-top: 20px;
+  }
 
+  .widgets p {
+    width: 60.7rem;
+  }
 
+  .button-widget {
+    width: 92%;
+  }
 
+  .link-to-widgets p {
+    width: 63.7rem;
+  }
+
+  .link-to-jobs p {
+    width: 63.7rem;
+  }
+
+  .upload-resume-input {
+
+  }
 }
 
 
@@ -1181,6 +1199,26 @@ h3 {
     "box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6";
     }
 
+  .box4 {
+    height: 48%;
+  }
+
+  .hamburger {
+    background-position: .4rem -.2rem;
+  }
+
+  .icon-profile {
+    background-position: 1.5rem 1.1rem;
+  }
+
+  .icon-calender {
+    background-position: 1.7rem 1.3rem;
+  }
+
+  .icon-dots {
+    background-position: 1.8rem 1.3rem;
+  }
+
   .summary-container {
     display: inherit;
   }
@@ -1191,9 +1229,32 @@ h3 {
   }
 
   .bar-graph img {
-    width: 445px;
+    width: 318px;
   }
 
+
+  .social-links:link,
+  .social-links:visited {
+    padding: .8rem 2.5rem;
+    font-size: 1.25rem
+  }
+
+  .social-container {
+    padding: 3.6rem 1.2rem 0 1.9rem;
+  }
+
+  .link-to-job {
+    background-position: 0.4rem 2.2rem;
+  }
+
+  .button-widget {
+    padding-left: 0;
+    width: 96%;
+  }
+
+  .widgets-container {
+    padding-left: 21px;
+  }
 }
 
 
