@@ -1,0 +1,55 @@
+
+.widgets-holder {
+/*widgets-container*/
+  display: flex;
+  /*border: 2px solid black;*/
+}
+
+
+.social-copy {
+height: 50px;
+border: 2px solid black;
+}
+
+.social-header {
+  font-size: 1.5rem;
+}
+
+.separate-widgets {
+  /*widgets*/
+  padding: 7px;
+  border-bottom: 2px solid black;
+  height: 280px;
+}
+
+
+/*.separate-widgets h2 {
+  font-size: 1.9px;
+}*/
+
+/*.link-to-job-input*/
+.widget-input-div {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-collapse: separate;
+  border-radius: 0 .5rem .5rem 0;
+  color: #596374;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.widget-inputs {
+  padding-right: 5px;
+}
+
+span {
+  /*width: 1%;*/
+  white-space: nowrap;
+}
+
+.widget-button {
+  display: flex;
+}
+
+
