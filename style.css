@@ -972,7 +972,7 @@ span {
   }
 
   .separate-widgets {
-    height: 20.2rem;
+    height: 21.2rem;
     padding-right: 3rem;
     width: 55%;
   }
@@ -997,7 +997,7 @@ span {
   }
 
   .social-copy {
-    height: 12rem;
+    height: 17rem;
     overflow: hidden;
   }
 
@@ -1084,7 +1084,7 @@ span {
   }
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 1099px) {
   .grid-wrapper {
     grid-template-areas: 
     "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
@@ -1177,7 +1177,7 @@ span {
   }
 
   .separate-widgets {
-    /*height: 162px;*/
+    background-position: 12px 19px;
     padding-right: 0;
     width: 100%;
   }
