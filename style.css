@@ -4,8 +4,8 @@
 
 html,
 body {
+  line-height: 1.4;
   margin: 0 auto;
-  /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Song Myung', serif;
   font-size: 62.5%;
   height: 1440px;
@@ -61,6 +61,7 @@ p {
 }
 
 .box4 {
+  background-color: #EDF2F6;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -78,6 +79,7 @@ p {
 .box6 {
   background-color: #EDF2F6;
   grid-area: box6;
+  width: 359px;
 }
            /*Side Nav-bar*/
 
@@ -96,8 +98,7 @@ p {
   color: #A0ABBE;
   display: flex;
   flex-direction: column;
-  height: 14rem;
-  padding: 3.8rem 0 0 0;
+  padding: 3.8rem 0 1.8rem 0;
 }
 
 .nav-profile p {
@@ -150,6 +151,10 @@ p {
   cursor: pointer;
 }
         /*Side nav-bar icons*/
+
+.nav-bar--header p {
+  padding-left: 2.9rem;
+}
 
 .home {
   background-image: url(images/nav-bar/icon-house-grey.png);
@@ -254,7 +259,6 @@ p {
 
 .job-description {
   background-color: #FFFFFF;
-  height: 93rem;
   margin: 0 auto;
   width: 88%;
 }
@@ -353,6 +357,7 @@ p {
   display: block;
   margin-bottom: -2.4rem;
 }
+
 .customer-service p {
   padding-left: 2.7rem;
 }
@@ -414,7 +419,7 @@ p {
       /*Summary area*/
 
 .header-link {
-  margin-right: 3.8rem;
+  margin-right: 1.8rem;
   height: 4rem;
   width: 11rem;
 }
@@ -430,9 +435,14 @@ p {
   border-bottom: 3px solid #26A3F6;
 }
 
+.drop-down-menu {
+  display: none;
+}
+
 .summary-container {
   background-color: #FFFFFF;
-  display: flex;
+  display: -webkit-box;
+  padding-left: 2rem;
 }
 
 .summary-container a {
@@ -449,7 +459,7 @@ p {
 }
 
 .job-board {
- padding-left: .7rem;
+  padding-left: .7rem;
 }
 
 .interviews {
@@ -510,7 +520,6 @@ p {
 
 .spinner-section {
   margin: 0 auto;
-
 }
 
 .spinners {
@@ -641,23 +650,10 @@ h3 {
   border: none;
 }
 
-.lorem {
-  width: 10rem;
-}
-
-.social-container {
-  font-weight: 700;
-  justify-content: space-around;
-}
-
-.widgets-container {
-  justify-content: space-around;
-}
-
 .social-side {
   background-repeat: no-repeat;
   border-radius: .5rem;
-  height: 4.7rem;
+  height: 6.5rem;
   margin-bottom: 1.5rem;
   padding: .2rem 0 0 5rem;
   width: 30rem;
@@ -672,10 +668,11 @@ h3 {
   padding: 1.1rem 2.5rem;
   text-align: center;
   text-decoration: none;
-  width: 83%;
+  width: 100%;
 }
 
 .faceBook {
+  background-repeat: no-repeat;
   background-color: #4B70BF;
   background-image: url(images/icons8-facebook-48.png);
   background-position: 1.1rem .6rem;
@@ -683,6 +680,7 @@ h3 {
 }
 
 .twitter {
+  background-repeat: no-repeat;
   background-size: 3rem 3rem;
   background-position: 2rem .7rem;
   background-image: url(images/icons8-twitter-48.png);
@@ -690,30 +688,67 @@ h3 {
 }
 
 .linkedin {
+  background-repeat: no-repeat;
   background-size: 2rem 2rem;
   background-position: 2.5rem 1.3rem;
   background-image: url(images/icons8-linkedin-80.png);
   background-color: #1583BC;
 }
 
+.widgets-holder {
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+}
+
+.widget-input-div {
+  align-items: center;
+  border-collapse: separate;
+  border-radius: 0 .5rem .5rem 0;
+  color: #596374;
+  display: flex;
+}
+
+.widget-inputs {
+  font-size: 17px;
+  height: 4.8rem;
+  padding-right: 5px;
+  width: 84%;
+}
+
+textarea:focus,
+input:focus{
+  outline: none;
+}
+
+span {
+  width: 8%;
+  white-space: nowrap;
+}
+
+.lorem {
+  font-size: 16px;
+  padding: 18px 0 23px 18px;
+}
+
+.social-header {
+  font-size: 1.5rem;
+}
+
 .widgets {
+  border-bottom: 1px solid #1583BC;
   background-size: 1.9rem 1.9rem;
   background-position: 0px 2.2rem;
   background-repeat: no-repeat;
   padding-top: .7rem;
   color: #596374;
   font-size: 1.2rem;
-  width: 30rem; 
-  height: 18rem;
-  border-bottom: 1px solid #3B999E;
+  height: 21.9rem;
 }
 
-.widgets h2 {
-  padding-left: 2.5rem;
-}
-
-.link-to-job { 
-  background-image: url(images/icon-earth.png);
+ .separate-widgets {
+  height: 233px;
+  padding-right: 30px;
 }
 
 .link-to-job-input {
@@ -728,16 +763,18 @@ h3 {
   padding-left: 1.9rem;
 }
 
-.link-to-job-button {
+.widget-button {
   background-color: #4DBAC0;
   border-radius: 0 .5rem .5rem 0;
   color: #F7F4EA;
   height: 4.8rem;
   justify-content: flex-end;
   width: 6rem;
+  font-weight: bold;
+  font-size: 13px;
 }
 
-.link-to-job-button:hover {
+.widget-button:hover {
   background-color: #3B999E;
 }
 
@@ -753,9 +790,27 @@ h3 {
   padding-left: 3rem;
 }
 
-.button-widget {
+.faceBook-widget {
+  background-image: url(images/icon-earth.png);
+  background-position: .9rem  1.9rem;
+  background-repeat: no-repeat;
+  background-size: 1.9rem 1.9rem;
+}
+
+.twitter-widget {
+  background-position: 1rem  1.9rem;
+  background-size: 1.9rem 1.9rem;
+  background-repeat: no-repeat;
   background-image: url(images/icon-web.png);
 }
+
+.upload-resume-widget {
+  background-position: 1rem  1.9rem;
+  background-size: 1.9rem 1.9rem;
+  background-repeat: no-repeat;
+  background-image: url(images/icon-paper-plane.png);
+  padding-right: 0;
+  }
 
 .link-to-widgets-button {
   border-radius: 0 5px 5px 0;
@@ -770,11 +825,6 @@ h3 {
   background-color: #3B999E;
 }
 
-.upload-resume {
-  background-image: url(images/icon-paper-plane.png);
-}
-
-
 .upload-resume-input {
   align-items: center;
   background-color: #FFFFFF;
@@ -783,10 +833,19 @@ h3 {
   display: flex;
   font-size: 1.4rem;
   height: 4.8rem;
-  margin-top: 2.1rem;
   padding-left: 1.4rem;
+  width: 95%;
 }
 
+.separate-widgets h2 {
+  font-size: 19px;
+  padding-left: 31px;
+  margin-bottom: -3px;
+}
+
+.resume-copy h2 {
+  height: 2.2rem;
+}
 
 @media screen and (max-width: 1240px) {
   .grid-wrapper {
@@ -812,20 +871,23 @@ h3 {
 
   .box4 {
     margin: 0 auto;
+  }
 
+  .box6 {
+    width: unset;
   }
   
   .button-container {
-    padding-right: 15px;
+    align-items: center;
     display: flex;
     height: 16rem;
-    align-items: center;
+    padding-right: 15px;
   }
 
   .summary-container {
+    justify-content: space-around;
     padding-left: 20px;
     margin-top: 2rem;
-    justify-content: space-around;
   }
 
   .circle {
@@ -837,8 +899,9 @@ h3 {
   }
 
   .bar-graph img {
-    width: 64.5rem;
+
     padding: 2.9rem 0 0 0rem;
+    width: 64.5rem;
   }
 
   .bar-graph-button {
@@ -868,13 +931,15 @@ h3 {
   }
 
   .social-container {
-    padding: 3.6rem 4.5rem 0 4.5rem;
+    justify-content: space-around;
     display: flex;
+    padding: 3.6rem 4.7rem 0 4.7rem;
+    margin-bottom: 27px;
   }
 
   .social-side {
     background-position: 1.2rem .6rem;
-    height: 4rem;
+    height: 4.8rem;
     margin-bottom: 1.9rem;
     padding-top: .3rem;
     width: 30%;
@@ -898,19 +963,90 @@ h3 {
     background-position: 1.6rem 1rem;
   }
 
-  .widgets-container {
+  .widgets-holder {
     display: flex;
-    justify-content: space-between;
+    flex-direction: inherit;
+    margin: 0 auto;
+    width: 90%;
   }
 
-  .widgets {
-    border-bottom: none;
-    width: 28%;
+  .separate-widgets {
+    height: 280px;
+    padding-right: 30px;
+    width: 55%;
   }
 
-  .widgets p{
-    padding-left: .5rem;
-    width: 25.7rem;
+  .separate-widgets h2 {
+    font-size: 19px;
+    padding-left: 31px;
+  }
+
+  .faceBook-widget {
+    background-image: url(images/icon-earth.png);
+    background-position: .9rem  1.9rem;
+    background-repeat: no-repeat;
+    background-size: 1.9rem 1.9rem;
+  }
+
+  .twitter-widget {
+    background-position: 1rem  1.9rem;
+    background-size: 1.9rem 1.9rem;
+    background-repeat: no-repeat;
+    background-image: url(images/icon-web.png);
+  }
+
+  .social-copy {
+    height: 18rem;
+  }
+
+  .lorem {
+    font-size: 16px;
+    padding: 18px 0 23px 18px;
+  }
+
+  .social-header {
+    font-size: 1.5rem;
+  }
+
+  .upload-resume-widget {
+    background-position: 1rem  1.9rem;
+    background-size: 1.9rem 1.9rem;
+    background-repeat: no-repeat;
+    background-image: url(images/icon-paper-plane.png);
+  }
+
+  .link-to-job-input {
+    display: inherit;
+  }
+
+  .widget-input-div {
+    align-items: center;
+    border-collapse: separate;
+    border-radius: 0 .5rem .5rem 0;
+    color: #596374;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .widget-inputs {
+    width: 80%;
+    height: 4.8rem;
+    padding-right: 5px;
+  }
+
+  textarea:focus,
+  input:focus{
+    outline: none;
+  }
+
+  span {
+    width: 17%;
+    white-space: nowrap;
+  }
+
+  .widget-button {
+    font-weight: bold;
+    font-size: 13px;
   }
 
   .widgets h2 {
@@ -920,40 +1056,32 @@ h3 {
   .link-to-job {
     background-position: 6.3rem 2.2rem;
     border-bottom: none;
-    padding-left: 6rem;
-    width: 33%;
   }
 
-  .link-to-job-input {
-    padding-left: 0;
-    /*width: 72%;*/
-  }
-
-  .button-widget {
-    /*margin-right: 2.9rem;*/
-  }
-
-  .link-to-widgets {
-    padding-left: 0;
+  .link-to-job p {
+    margin: 0;
+    width: 85%;
   }
 
   .upload-resume {
     background-position: 0 2.2rem;
-    margin-right: 4.6rem;
   }
 
   .upload-resume h2 {
     padding-left: 3.3rem;
   }
 
+  .upload-resume-widget {
+    padding-right: 0;
+  }
+
   .upload-resume-input {
-    margin-right: .9rem;
-    padding-left: 5px;
+    width: 92%;
+    margin: 0 0 0 1.3rem;
   }
 }
 
-
-@media screen and (max-width: 1098px) {
+@media screen and (max-width: 984px) {
   .grid-wrapper {
     grid-template-areas: 
     "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
@@ -976,12 +1104,16 @@ h3 {
     display: none;
   }
 
+  .nav-bar {
+    display: none;
+  }
+
   .box2 {
     padding-left: 1.5rem;
   }
 
   .search-input {
-    background-position: .5rem .5rem;
+    background-size: 33px 33px;
     padding-left: 5.5rem;
   }
 
@@ -1003,7 +1135,8 @@ h3 {
 
   .social-container {
     display: inherit;
-    width: 98%;
+    margin: 0 auto;
+    width: 50%;
   }
 
   .social-side {
@@ -1035,15 +1168,21 @@ h3 {
     justify-content: normal;
   }
 
+  .separate-widgets {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+
 }
 
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 880px) {
   .icon {
     width: 8rem;
   }
 
   .search-input {
-    background-position: 1.5rem .1rem;
+    background-position: .7rem .8rem;
     background-repeat: no-repeat;
     font-size: 1.7rem;
     height: 98%;
@@ -1073,24 +1212,27 @@ h3 {
 
   .upper-lower-header {
     display: inherit; 
-    height: 15.3rem;
+    height: 17.3rem;
   }
 
   .customer-service {
-    padding-left: 2.2rem;
     height: .1rem;
+    padding-left: 2.2rem;
   }
 
   .button-container {
-    padding: 0 0 3.4rem 2rem;
-    padding: 0 0 0 2rem;
-    margin-top: 4.9rem;
     justify-content: normal;
+    margin-top: 5.9rem;
+    padding: 0 0 0 2rem;
   }
 
   .summary-container {
-    margin-top: 0;
-    padding-left: 20px;
+    display: none;
+  }
+
+  .drop-down-menu {
+    display: inherit;
+    margin: 7px 0 0 22px;
   }
 
   .button-style {
@@ -1102,34 +1244,34 @@ h3 {
   .open-button {
     background-position: .9rem 1rem;
     background-size: 1.5rem 1.5rem;
-    width: 90px;
     font-size: 1.5rem;
+    width: 90px;
   }
 
   .ribbon-button {
-    background-size: 2rem 2rem;
-    background-position: .8rem .9rem;  
     background-image: url(images/icon-bookmark.png);
+    background-position: .8rem .9rem;  
+    background-size: 2rem 2rem;
   }
 
   .edit-button {
+    background-image: url(images/icon-pencil.png);
     background-position: .9rem .8rem;  
     background-size: 2rem 2rem;
-    background-image: url(images/icon-pencil.png);
   }
 
   .delete-button {
-    background-size: 1.9rem 1.9rem;
-    background-position: .9rem .8rem;
     background-image: url(images/icon-trash.png);
+    background-position: .9rem .8rem;
+    background-size: 1.9rem 1.9rem;
   }
 
   .spinners {
-    padding-right: 10px;
+    padding-right: 1rem;
   }
 
   .bar-graph img {
-    width: 500px;
+    width: 50rem;
   }
 
   .job {
@@ -1143,7 +1285,12 @@ h3 {
 
   .widgets-container {
     display: inherit;
-    padding-left: 40px;
+    padding-left: 4rem;
+  }
+
+  .widgets-holder {
+    display: block;
+    width: 41%
   }
 
   .link-to-job-input  {
@@ -1161,8 +1308,8 @@ h3 {
   .spinners {
     display: inline-flex;
     height: 20rem;
-    margin-top: 45px;
-    padding-top: 20px;
+    margin-top: 4.5rem;
+    padding-top: 2rem;
   }
 
   .social-side {
@@ -1170,7 +1317,7 @@ h3 {
   }
 
   .widgets {
-    background-position: 7px 2.2rem;
+    background-position: .7rem 2.2rem;
   }
 
   .widgets p {
@@ -1179,7 +1326,7 @@ h3 {
 
   .button-widget {
     width: 92%;
-    padding-left: 6px;
+    padding-left: .6rem;
   }
 
   .link-to-widgets p {
@@ -1225,8 +1372,15 @@ h3 {
     height: 48%;
   }
 
+  .search-input {
+    background-image: url(images/icon-search.png);
+    background-position: 1.5rem 1.1rem;
+    background-size: 27px 27px;
+  }
+
   .hamburger {
-    background-position: .4rem -.2rem;
+    background-position: 2rem .6rem;
+    background-size: 35px 35px;
   }
 
   .icon-profile {
@@ -1241,19 +1395,13 @@ h3 {
     background-position: 1.8rem 1.3rem;
   }
 
-  .summary-container {
-    display: inherit;
-  }
-
   .upper-lower-header {
-    /*display: inherit;*/
     height: 162px;
   }
 
   .bar-graph img {
-    width: 318px;
+    width: 31.8rem;
   }
-
 
   .social-links:link,
   .social-links:visited {
@@ -1263,6 +1411,7 @@ h3 {
 
   .social-container {
     padding: 3.6rem 1.2rem 0 1.9rem;
+    width: 70%;
   }
 
   .link-to-job {
